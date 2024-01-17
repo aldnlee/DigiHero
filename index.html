@@ -11,45 +11,65 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Ionicon JS-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
-  <body class="bg-gradient-to-t from-[#55abff] to-[#091927] h-screen">
-    <header class="bg-white py-5 px-3">
-      <nav class="flex justify-between items-center w-[92%]">
+  <body class="bg-white h-fit">
+    <header class="header-shadow">
+      <nav class="flex justify-between items-center w-[100%] px-8">
         <div>
-          <img class="w-120" src="img/Digihero Logo.png" />
+          <img class="md:w-120" src="img/Digihero Logo.png" />
         </div>
         <div
-          class="md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[9.2%] md:w-auto w-full flex items-center px-5"
+          class="nav-Links md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
         >
           <ul
             class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8"
           >
             <li>
-              <a class="hover:text-gray-500" href="#">Products</a>
+              <a class="hover:text-gray-500" href="#">Home</a>
             </li>
             <li>
-              <a class="hover:text-gray-500" href="#">Products</a>
+              <a class="hover:text-gray-500" href="#">Tentang Kami</a>
             </li>
             <li>
-              <a class="hover:text-gray-500" href="#">Products</a>
+              <a class="hover:text-gray-500" href="#">Program Digi</a>
             </li>
             <li>
-              <a class="hover:text-gray-500" href="#">Products</a>
-            </li>
-            <li>
-              <a class="hover:text-gray-500" href="#">Products</a>
+              <a class="hover:text-gray-500" href="#">Contact Digi</a>
             </li>
           </ul>
         </div>
 
-        <div>
+        <div class="flex items-center gap-6">
           <button
-            class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87ac]"
+            class="bg-[#012a4a] text-white login-btn rounded-full hover:bg-[#165e94]"
           >
-            Sign in
+            Login
           </button>
+          <ion-icon
+            onclick="onToggleMenu(this)"
+            name="menu"
+            class="text-3xl cursor-pointer md:hidden"
+          ></ion-icon>
         </div>
       </nav>
     </header>
+
+    <script>
+      const navLinks = document.querySelector(".nav-Links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        navLinks.classList.toggle("top-[9%]");
+      }
+    </script>
   </body>
 </html>

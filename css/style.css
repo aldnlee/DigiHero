@@ -1,0 +1,37 @@
+.px-8 {
+    height: 3px;
+    width: 10px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.py-5{
+    display: flex;
+    height: 20px;
+}
+.header-shadow {
+    height: 55px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    width: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.login-btn{
+    height: 40px;
+    width: 120px;
+    background-color: #012A4A;
+}
+@media(max-width:768px){
+
+.header-shadow{
+     border-radius: 0px;
+     margin: auto;
+     padding: 10px 0 10px 0;
+}
+   
+}

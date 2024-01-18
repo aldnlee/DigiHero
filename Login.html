@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Font External-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/login.css" />
+    <!--Ionicon JS-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="bg-white h-fit">
+
+      <div class="lp-grid">
+        <div class="grid-lp-left">
+            <div class="c_landing-page-frame2">
+                <div class="c_landing-page-frame3">
+                  <div class="c_landing-page-text08"> 
+                    <img class="char-digi" src="/img/digi-character.png" alt="DigiHero">
+                  <h2 class="h2-hero">Digital Heroes</h2> 
+                  <p class="detail-hero">Relawan yang  memberikan edukasi digital kepada masyarakat.</p>
+                  </div>
+                </div>
+                <div class="c_landing-page-frame4">
+                  <div class="c_landing-page-text10">
+                    <img class="char-app" src="/img/digi-applicant.png" alt="DigiHero">
+                    <h2 class="h2-app">Applicant</h2>
+                    <p class="detail-app">Masyarakat yang mengajukan pengadaan pemberian edukasi tentang teknologi.</p>
+                  </div>
+                </div>
+              </div>
+               <div class="c_landing-page-text06">
+                <p class="c_landing-page-text07">
+                    Pastikan role yang anda pilih sesuai dengan kebutuhan anda.
+                </p>
+              </div>
+              <h1 class="login-who">Siapakah anda didalam DigiHero?</h1>
+
+              <div class="back-btn">
+                 <img src="/img/back-btn.png" alt="DigiHero">
+              </div>
+             
+              <div class="login-left">
+                <div class="login-left01">
+                    <img class="login-digi-logo" src="/img/Digihero Logo.png" alt="DigiHero">
+                </div>
+                <div class="login-left02">
+Login
+                </div>
+              </div>
+             
+          </div> 
+          <div class="grid-lp-right">
+                <img class="img-digi1" src="/img/LoginSlider.png" alt="DigiHero"> <div class="login-right">
+                    <div class="login-right01">
+                        <img class="login-digi-logo" src="/img/Digihero Logo.png" alt="DigiHero">
+                    </div>
+                    <div class="login-right02">
+Login
+                    </div>
+                </div>
+        </div>
+        </div>
+        </div>    
+      </div>
+    </div>
+    <script>
+      const navLinks = document.querySelector(".nav-Links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        navLinks.classList.toggle("top-[9%]");
+      }
+    </script>
+  </body>
+</html>

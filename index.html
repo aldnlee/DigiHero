@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <!--Font External-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,42 +21,42 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
   </head>
-  <body class="bg-white h-fit">
-    <header class="header-shadow sticky top-0 z-10">
-      <nav class="flex justify-between items-center w-[100%] px-8">
+  <body class="login-body">
+    <header class="header-shadow">
+      <nav class=" navbar-base">
         <div>
           <img class="md:w-120" src="img/Digihero Logo.png" />
         </div>
         <div
-          class="nav-Links md:static absolute bg-white md:min-h-fit min-h-[40vh] left-0 top-[-600%] md:w-auto w-full flex items-center px-5 shadow-md md:shadow-none"
+          class="nav-Links"
         >
           <ul
-            class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8"
+            class="navbar-list" style="list-style-type: none;"
           >
             <li>
-              <a class="hover:text-gray-500" href="#">Home</a>
+              <a class="list-fitur" href="#">Home</a>
             </li>
             <li>
-              <a class="hover:text-gray-500" href="#">Tentang Kami</a>
+              <a class="list-fitur" href="#">Tentang Kami</a>
             </li>
             <li>
-              <a class="hover:text-gray-500" href="#">Program Digi</a>
+              <a class="list-fitur" href="#">Program Digi</a>
             </li>
             <li>
-              <a class="hover:text-gray-500" href="#">Contact Digi</a>
+              <a class="list-fitur" href="#">Contact Digi</a>
             </li>
           </ul>
         </div>
         <div class="flex items-center gap-6">
           <button
-            class="bg-[#012a4a] text-white login-btn rounded-full hover:bg-[#165e94]"
+            class="login-btn"
           >
             Login
           </button>
           <ion-icon
             onclick="onToggleMenu(this)"
             name="menu"
-            class="text-3xl cursor-pointer md:hidden"
+            class="menu-btn text-3xl cursor-pointer md:hidden"
           ></ion-icon>
         </div>
       </nav>

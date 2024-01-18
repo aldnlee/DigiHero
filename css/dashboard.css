@@ -21,7 +21,7 @@ nav{
   height: 100vh;
   left: 0;
   background: #fff;
-  width: 280px;
+  width: 290px;
   overflow: hidden;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
@@ -31,15 +31,15 @@ nav{
   margin: 10px 0 0 10px;
 }
 .logo img{
-  width: 165px;
+  width: 55px;
   height: 55px;
   border-radius: 50%;
 }
 .logo span{
   font-weight: bold;
   padding-left: 15px;
-  font-size: 18px;
-  text-transform: uppercase;
+  font-size: 24px;
+  color: #000;
 }
 a{
   position: static;
@@ -67,18 +67,41 @@ a:hover{
 }
 .logout{
   position: absolute;
-  bottom: 0;
+  bottom: 40;
 }
+.navbar{
+    margin-left: 10px;
+}
+
+
+
+/* userprofile Section */
+.user-profile{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: right;
+}
+
+
+
 
 /* Main Section */
 .main{
   position: relative;
-  padding: 20px;
+  padding: 0px;
   width: 100%;
+  background-color: #ecf5f8;
 }
 .main-top{
   display: flex;
   width: 100%;
+  height: 80px;
+  padding: 20px;
+  background-color: #fff;
+}
+.main-top h1{
+    font-weight: 600;
 }
 .main-top i{
   position: absolute;
@@ -93,12 +116,15 @@ a:hover{
 }
 .main-skills .card{
   width: 25%;
+  height: 120px;
   margin: 10px;
+  margin-top: 30px;
   background: #fff;
-  text-align: center;
+  text-align: left;
+  justify-content: left;
+  align-items: center;
   border-radius: 20px;
-  padding: 10px;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  padding: 30px;
 }
 .main-skills .card h3{
   margin: 10px;
@@ -127,15 +153,18 @@ a:hover{
 .main-course{
   margin-top:20px ;
   text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
 }
+
 .course-box{
   width: 100%;
   height: 300px;
   padding: 10px 10px 30px 10px;
   margin-top: 10px;
-  background: #fff;
+  background: #ffffff00;
   border-radius: 10px;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
 .course-box ul{
   list-style: none;
@@ -150,37 +179,56 @@ a:hover{
   color: #000;
   border-bottom: 1px solid #000;
 }
-.course-box .course{
-  display: flex;
+.course{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 .box{
-  width: 33%;
-  padding: 10px;
+  display: flex;
+  width: 52%;
   margin: 10px;
-  border-radius: 10px;
-  background: rgb(235, 233, 233);
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-left: 1px;
+  border-radius: 20px;
+  background: #ffffff;
+  flex-direction: column;
 }
+.apply{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+.profile-applicant{
+    height: 80px;
+    background-color: aqua;
+    border-radius: 20px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.box1{
+    display: flex;
+  width: 52%;
+  margin: 10px;
+  padding: 20px;
+  margin-left: 7px;
+  margin-right: 0px;
+  border-radius: 20px;
+  background: #ffffff;
+  flex-direction: column;
+  }
 .box p{
   font-size: 12px;
   margin-top: 5px;
 }
-.box button{
-  background: #000;
-  color: #fff;
-  padding: 7px 10px;
-  border-radius: 10px;
-  margin-top: 3rem;
-  cursor: pointer;
-}
-.box button:hover{
-  background: rgba(0, 0, 0, 0.842);
-}
-.box i{
-  font-size: 7rem;
-  float: right;
-  margin: -20px 20px 20px 0;
-}
+.box1 p{
+    font-size: 12px;
+    margin-top: 5px;
+  }
 .html{
   color: rgb(25, 94, 54);
 }
